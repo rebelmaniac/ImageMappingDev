@@ -65,7 +65,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
         setRenderCount(prev => prev + 1);
       }
     }
-  }, [img, isRendered, renderCount]);
+  }, [img, isRendered]);
 
   useEffect(() => {
     if (isInitialMount.current) {
@@ -82,7 +82,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
       setMap(storedMap);
       initCanvas();
       console.log("I am in my personal")
-    }, [];
+    }
 
     if (containerRef) {
       containerRef.current = container.current;
