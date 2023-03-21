@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageMapperProps } from './types';
 
 const absPos: React.CSSProperties = {
-  position: 'relative',
+  position: 'absolute',
   top: 0,
   left: 0,
 };
@@ -28,7 +28,7 @@ interface StylesProps {
 
 const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
   container: {
-    position: 'relative',
+    position: 'absolute',
     margin: 'auto'
   },
   canvas: {
