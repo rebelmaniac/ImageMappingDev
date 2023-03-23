@@ -65,7 +65,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
         setRenderCount(prev => prev + 1);
       }
     }
-  }, [img, isRendered]);
+  }, [img, isRendered, renderCount]);
 
   useEffect(() => {
     if (isInitialMount.current) {
@@ -81,8 +81,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
     container.current.clearHighlightedArea = () => {
       setMap(storedMap);
       initCanvas();
-      console.log("I am in my personal")
-    }
+    };
 
     if (containerRef) {
       containerRef.current = container.current;
