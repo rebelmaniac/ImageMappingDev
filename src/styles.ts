@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageMapperProps } from './types';
 
 const absPos: React.CSSProperties = {
-  position: 'relative',
+  position: 'absolute',
   top: 0,
   left: 0,
 };
