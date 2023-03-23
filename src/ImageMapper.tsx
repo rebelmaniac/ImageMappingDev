@@ -81,7 +81,7 @@ const ImageMapper: React.FC<ImageMapperProps> = (props: ImageMapperProps) => {
     container.current.clearHighlightedArea = () => {
       setMap(storedMap);
       initCanvas();
-    }, [];
+    };
 
     if (containerRef) {
       containerRef.current = container.current;
