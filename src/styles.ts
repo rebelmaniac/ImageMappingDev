@@ -28,7 +28,8 @@ interface StylesProps {
 
 const styles = (props?: Partial<ImageMapperProps>): StylesProps => ({
   container: {
-    position: 'relative',
+    position: 'absolute',
+    margin: 'auto'
   },
   canvas: {
     ...absPos,
